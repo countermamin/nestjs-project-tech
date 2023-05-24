@@ -1,4 +1,11 @@
-import { Body, Controller, Delete, Patch, Req, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Patch,
+  Req,
+  UseGuards,
+} from '@nestjs/common';
 import { UsersService } from './users.service';
 import { UpdateUserDTO } from './dto';
 import { JwtAuthGuard } from '../../guards/jwt-guard';
@@ -27,4 +34,3 @@ export class UsersController {
     return this.usersService.deleteUser(user.email);
   }
 }
-
