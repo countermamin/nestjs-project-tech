@@ -1,5 +1,5 @@
 import { Column, HasMany, Model, Table } from 'sequelize-typescript';
-import { Watchlist } from '../../wathclist/model/watchlist.model';
+import { Watchlist } from '../../watchlist/model/watchlist.model';
 
 @Table
 export class User extends Model {
